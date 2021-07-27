@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="sidebar.css">
+<style>
+#naplan,#grades,#attendance {
+  display: none;
+}
+</style>
+<body>
+  <table>
+    <tr>
+      <td style="left:0">
+        <img src="eaton_logo.jpeg">
+      </td>
+      <td style="background-color:#0a4d60; width:100%; color:white; padding-left:20px">
+          <h1>ECC Data Guide</h1>
+      </td>
+    </tr>
+  </table>
+
+  <div class="sidenav">
+    <a href="overview.html">Overview Data</a>
+    <a href="#">Lower School</a>
+    <a href="#">Upper School</a>
+    <a href="#">NAPLAN/ OLNA</a>
+    <a href="#">Data Sources</a>
+  </div>
+  <div class="main" style="padding-top:20px">
+    Click on the buttons below to look at the quick guide to that type of data.
+  <p>
+<button onclick="naplanShow()">NAPLAN Data</button>
+<button onclick="gradesShow()">Previous Grades</button>
+<button onclick="attendanceShow()">Attendance</button>
+<p>
+<img id="naplan" src="naplan.png">
+<img id="grades" src="grades.png">
+<img id="attendance" src="attendance.png">
+
+<script>
+    function naplanShow() {
+      var x = document.getElementById("naplan");
+      var y = document.getElementById("grades");
+      var z = document.getElementById("attendance");
+      y.style.display = "none";
+      z.style.display = "none";
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function gradesShow() {
+      var x = document.getElementById("grades");
+      var y = document.getElementById("naplan");
+      var z = document.getElementById("attendance");
+      y.style.display = "none";
+      z.style.display = "none";
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function attendanceShow() {
+      var x = document.getElementById("attendance");
+      var y = document.getElementById("naplan");
+      var z = document.getElementById("grades");
+      y.style.display = "none";
+      z.style.display = "none";
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+</html>
