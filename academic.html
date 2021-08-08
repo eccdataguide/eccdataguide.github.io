@@ -29,5 +29,35 @@
   <div class="main" style="padding-top:20px">
     Click on the buttons below to look at the quick guide to that type of data.
   <p>
+<button onclick="naplanShow()">NAPLAN Data</button>
+<button onclick="gradesShow()">Previous Grades</button>
+<p>
+<img id="naplan" src="naplan2.png">
+<img id="grades" src="grades2.png">
 
+<script>
+    function naplanShow() {
+      var x = document.getElementById("naplan");
+      var y = document.getElementById("grades");
+      y.style.display = "none";
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function gradesShow() {
+      var x = document.getElementById("grades");
+      var y = document.getElementById("naplan");
+      y.style.display = "none";
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+
+</script>
 </html>
