@@ -2,7 +2,7 @@
 <html>
 <link rel="stylesheet" href="sidebar.css">
 <style>
-#naplan,#grades,#attendance {
+#abes,#grades,#attendance {
   display: none;
 }
 </style>
@@ -28,5 +28,19 @@
   <div class="main" style="padding-top:20px">
     Click on the buttons below to look at the quick guide to that type of data.
   <p>
+<button onclick="abesShow()">ABEs</button>
+<p>
+<img id="abes" src="abes.png">
 
+<script>
+    function abesShow() {
+      var x = document.getElementById("abes");
+
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
 </html>
