@@ -1,0 +1,65 @@
+#naplanbtn {
+  background-image: url("buttons/naplan-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#naplanbtn:hover {
+  background-image: url("buttons/naplan-grey.png");
+}
+
+#gradesbtn {
+  background-image: url("buttons/previousgrades-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#gradesbtn:hover {
+  background-image: url("buttons/previousgrades-grey.png");
+}
+
+#abesbtn{
+  background-image: url("buttons/abes-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#abesbtn:hover {
+  background-image: url("buttons/abes-grey.png");
+}
+
+#riskbtn{
+  background-image: url("buttons/riskmatrix-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#riskbtn:hover {
+  background-image: url("buttons/riskmatrix-grey.png");
+}
+
+#tablebtn{
+  background-image: url("buttons/student-table-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#tablebtn:hover {
+  background-image: url("buttons/student-table-grey.png");
+}
+/* Div that holds the buttons alongside each other */
+#datashow {
+  position:absolute;
+  margin-left:40px;
+  margin-top: 80px;
+}

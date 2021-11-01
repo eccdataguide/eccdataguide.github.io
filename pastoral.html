@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="buttons.css">
+
 <style>
 #abes,#grades,#attendance {
   display: none;
 }
 </style>
 <body>
-  <table>
-    <tr>
-      <td style="left:0">
-        <img style="z-index: 1; position:absolute; left:10px; top:10px; height:85px" src="eaton_logo.jpeg">
-      </td>
-      <td style="background-color:#0a4d60; width:100%; color:white; padding-left:300px">
-          <h1>ECC Data Guide</h1>
-      </td>
-    </tr>
-  </table>
+<div id="logodiv">
+  <img id="logo" style="height:85px" src="eaton_logo.jpeg">
+</div>
+<div id="topbar">
+<h1>ECC Data Guide</h1>
+</div>
 
-  <div class="sidenav">
-    <a href="index.html">Home</a>
-    <a href="pastoral.html"><p>Pastoral <br>Data</a>
-    <a href="academic.html"><p>Academic <br>Data</a>
-    <a href="datasources.html"><p>Data <br>Sources</a>
-  </div>
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="pastoral.html"><p>Pastoral <br>Data</a>
+  <a href="academic.html"><p>Academic <br>Data</a>
+  <a href="datasources.html"><p>Data <br>Sources</a>
+  <a href="collecting.html"><p>Collecting <br>Data</a>
+</div>
 
   <div class="main" style="padding-top:20px">
     Click on the buttons below to look at the quick guide to that type of data.
   <p>
-<button onclick="abesShow()">ABEs</button>
-<p>
+    <div id="abesbtn" onclick="abesShow()">
+    </div>
+
+<div id="datashow">
 <img id="abes" src="ABEs.png">
 
 <script>
