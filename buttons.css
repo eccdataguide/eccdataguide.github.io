@@ -1,5 +1,5 @@
 #naplanbtn {
-  background-image: url("Buttons/naplan-white.png");
+  background-image: url("buttons/naplan-white.png");
   height:64px;
   width:154px;
   float: left;
@@ -7,11 +7,11 @@
 }
 
 #naplanbtn:hover {
-  background-image: url("Buttons/naplan-grey.png");
+  background-image: url("buttons/naplan-grey.png");
 }
 
 #gradesbtn {
-  background-image: url("Buttons/previousgrades-white.png");
+  background-image: url("buttons/previousgrades-white.png");
   height:64px;
   width:154px;
   float: left;
@@ -19,11 +19,11 @@
 }
 
 #gradesbtn:hover {
-  background-image: url("Buttons/previousgrades-grey.png");
+  background-image: url("buttons/previousgrades-grey.png");
 }
 
 #abesbtn{
-  background-image: url("Buttons/abes-white.png");
+  background-image: url("buttons/abes-white.png");
   height:64px;
   width:154px;
   float: left;
@@ -31,11 +31,11 @@
 }
 
 #abesbtn:hover {
-  background-image: url("Buttons/abes-grey.png");
+  background-image: url("buttons/abes-grey.png");
 }
 
 #riskbtn{
-  background-image: url("Buttons/riskmatrix-white.png");
+  background-image: url("buttons/riskmatrix-white.png");
   height:64px;
   width:154px;
   float: left;
@@ -43,11 +43,11 @@
 }
 
 #riskbtn:hover {
-  background-image: url("Buttons/riskmatrix-grey.png");
+  background-image: url("buttons/riskmatrix-grey.png");
 }
 
 #tablebtn{
-  background-image: url("Buttons/student-table-white.png");
+  background-image: url("buttons/student-table-white.png");
   height:64px;
   width:154px;
   float: left;
@@ -55,7 +55,7 @@
 }
 
 #tablebtn:hover {
-  background-image: url("Buttons/student-table-grey.png");
+  background-image: url("buttons/student-table-grey.png");
 }
 /* Div that holds the buttons alongside each other */
 #datashow {
