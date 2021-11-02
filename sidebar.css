@@ -2,20 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@400&display=swap');
 
 #logodiv {
-  position:absolute;
+  position:fixed;
   top: 0px;
   left: 0px;
+  z-index:1;
 }
 
 #logo {
-  position:absolute;
+  position:fixed;
   top: 0px;
   left: 0px;
   z-index: 1;
 }
 
 #topbar {
-  position:absolute;
+  position:fixed;
   width:100%;
   top: 0px;
   left: 260px;
@@ -23,6 +24,7 @@
   color: white;
   height: 85px;
   padding-left: 40px;
+  z-index: 1;
 }
 
 .sidenav {
