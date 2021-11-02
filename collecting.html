@@ -28,25 +28,25 @@
     <a href="collecting.html"><p>Collecting <br>Data</a>
   </div>
 
-  <div id="formsbtnone" onclick="forms1Show()"></div>
-  <div id="formsbtntwo" onclick="forms2Show()"></div>
-  <div id="formsbtnthree" onclick="forms3Show()"></div>
+  <div id="formsbtnone" onclick="formsoneShow()"></div>
+  <div id="formsbtntwo" onclick="formstwoShow()"></div>
+  <div id="formsbtnthree" onclick="formsthreeShow()"></div>
 
 
   <div id="datashow">
-  <img id="forms1" src="data/forms-step1.png">
-  <img id="forms2" src="data/forms-step2.png">
-  <img id="forms3" src="data/forms-step3.png">
+  <img id="formsone" src="data/forms-step1.png">
+  <img id="formstwo" src="data/forms-step2.png">
+  <img id="formsthree" src="data/forms-step3.png">
   </div>
 </div>
 
 </div>
 </body>
 <script>
-    function forms1Show() {
-      var x = document.getElementById("forms1");
-      var y = document.getElementById("forms2");
-      var z = document.getElementById("forms3");
+    function formsoneShow() {
+      var x = document.getElementById("formsone");
+      var y = document.getElementById("formstwo");
+      var z = document.getElementById("formsthree");
       y.style.display = "none";
       z.style.display = "none";
       if (x.style.display === "block") {
@@ -56,10 +56,10 @@
       }
     }
 
-    function forms2Show() {
-      var x = document.getElementById("forms1");
-      var y = document.getElementById("forms2");
-      var z = document.getElementById("forms3");
+    function formstwoShow() {
+      var x = document.getElementById("formsone");
+      var y = document.getElementById("formstwo");
+      var z = document.getElementById("formsthree");
       x.style.display = "none";
       z.style.display = "none";
       if (y.style.display === "block") {
@@ -69,10 +69,10 @@
       }
     }
 
-    function forms3Show() {
-      var x = document.getElementById("forms1");
-      var y = document.getElementById("forms2");
-      var z = document.getElementById("forms3");
+    function formsthreeShow() {
+      var x = document.getElementById("formsone");
+      var y = document.getElementById("formstwo");
+      var z = document.getElementById("formsthree");
       x.style.display = "none";
       y.style.display = "none";
       if (z.style.display === "block") {
