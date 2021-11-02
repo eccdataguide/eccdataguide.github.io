@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="sidebar.css">
 <link rel="stylesheet" href="buttons.css">
 <style>
-#naplan,#grades,#attendance,#stdtable,#riskmatrix{
+#naplan,#grades,#attendance,#stdtable,#riskmatrix, #taskmark{
   display: none;
   width: 800px;
 }
@@ -21,7 +21,7 @@
   <a href="index.html">Home</a>
   <a href="pastoral.html"><p>Pastoral <br>Data</a>
   <a href="academic.html"><p>Academic <br>Data</a>
-  <a href="datasources.html"><p>Data <br>Sources</a>
+<!--    <a href="datasources.html"><p>Data <br>Sources</a> -->
   <a href="collecting.html"><p>Collecting <br>Data</a>
 </div>
 
@@ -40,19 +40,25 @@
 <div id="tablebtn" onclick="tableShow()">
 </div>
 
+<div id="taskmarkbtn" onclick="taskShow()">
+</div>
+
 <div id="datashow">
 <img id="naplan" src="data/naplan3.png">
 <img id="grades" src="data/grades3.png">
 <img id="stdtable" src="data/studenttable2.png">
 <img id="riskmatrix" src="data/riskmatrix.png">
+<img id="taskmark" src="data/taskmarkreport.png">
 </div>
 
 <script>
     function naplanShow() {
+      var v = document.getElementById("taskmark");
       var x = document.getElementById("naplan");
       var y = document.getElementById("grades");
       var z = document.getElementById("stdtable");
       var w = document.getElementById("riskmatrix");
+      v.style.display = "none";
       w.style.display = "none";
       y.style.display = "none";
       z.style.display = "none";
@@ -64,10 +70,12 @@
     }
 
     function gradesShow() {
+      var v = document.getElementById("taskmark");
       var x = document.getElementById("grades");
       var y = document.getElementById("naplan");
       var z = document.getElementById("stdtable");
       var w = document.getElementById("riskmatrix");
+      v.style.display = "none";
       w.style.display = "none";
       z.style.display = "none";
       y.style.display = "none";
@@ -79,10 +87,12 @@
     }
 
       function tableShow() {
+        var v = document.getElementById("taskmark");
         var x = document.getElementById("grades");
         var y = document.getElementById("naplan");
         var z = document.getElementById("stdtable");
         var w = document.getElementById("riskmatrix");
+        v.style.display = "none";
         w.style.display = "none";
         x.style.display = "none";
         y.style.display = "none";
@@ -94,10 +104,12 @@
       }
 
       function riskShow() {
+        var v = document.getElementById("taskmark");
         var x = document.getElementById("grades");
         var y = document.getElementById("naplan");
         var z = document.getElementById("stdtable");
         var w = document.getElementById("riskmatrix");
+        v.style.display = "none";
         z.style.display = "none";
         x.style.display = "none";
         y.style.display = "none";
@@ -108,6 +120,22 @@
         }
       }
 
+      function taskShow() {
+        var v = document.getElementById("taskmark");
+        var x = document.getElementById("grades");
+        var y = document.getElementById("naplan");
+        var z = document.getElementById("stdtable");
+        var w = document.getElementById("riskmatrix");
+        w.style.display = "none";
+        z.style.display = "none";
+        x.style.display = "none";
+        y.style.display = "none";
+        if (v.style.display === "block") {
+          v.style.display = "none";
+        } else {
+          v.style.display = "block";
+        }
+      }
 
 
 </script>

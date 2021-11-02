@@ -57,6 +57,66 @@
 #tablebtn:hover {
   background-image: url("buttons/student-table-grey.png");
 }
+
+#formsbtnone {
+  background-image: url("buttons/forms1-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#formsbtnone:hover {
+  background-image: url("buttons/forms1-grey.png");
+}
+
+#formsbtntwo {
+  background-image: url("buttons/forms2-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#formsbtntwo:hover {
+  background-image: url("buttons/forms2-grey.png");
+}
+
+#formsbtnthree {
+  background-image: url("buttons/forms3-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#formsbtnthree:hover {
+  background-image: url("buttons/forms3-grey.png");
+}
+
+#taskmarkbtn {
+  background-image: url("buttons/taskmarkreport-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#taskmarkbtn:hover {
+  background-image: url("buttons/taskmarkreport-grey.png");
+}
+
+#qualbtn {
+  background-image: url("buttons/qualitativeanalysis-white.png");
+  height:64px;
+  width:154px;
+  float: left;
+  display:inline;
+}
+
+#qualbtn:hover {
+  background-image: url("buttons/qualitativeanalysis-grey.png");
+}
 /* Div that holds the buttons alongside each other */
 #datashow {
   position:absolute;

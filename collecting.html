@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="buttons.css">
+<style>
+#forms1,#forms2,#forms3{
+  display: none;
+  width: 800px;
+}
+</style>
+
 <body>
 <div id="logodiv">
   <img id="logo" style="height:85px" src="eaton_logo.jpeg">
@@ -8,20 +16,70 @@
 <div id="topbar">
 <h1>ECC Data Guide</h1>
 </div>
-
+<div class="main" style="padding-top:20px">
+  Click on the buttons below to show the guide on how to create surveys using Microsoft Forms.
+  <p>
 
   <div class="sidenav">
     <a href="index.html">Home</a>
     <a href="pastoral.html"><p>Pastoral <br>Data</a>
     <a href="academic.html"><p>Academic <br>Data</a>
-    <a href="datasources.html"><p>Data <br>Sources</a>
+<!--    <a href="datasources.html"><p>Data <br>Sources</a> -->
     <a href="collecting.html"><p>Collecting <br>Data</a>
   </div>
 
+  <div id="formsbtnone" onclick="forms1Show()"></div>
+  <div id="formsbtntwo" onclick="forms2Show()"></div>
+  <div id="formsbtnthree" onclick="forms3Show()"></div>
 
+
+  <div id="datashow">
+  <img id="forms1" src="data/forms-step1.png">
+  <img id="forms2" src="data/forms-step2.png">
+  <img id="forms3" src="data/forms-step3.png">
   </div>
-  <p>
 </div>
 
+</div>
 </body>
+<script>
+    function forms1Show() {
+      var x = document.getElementById("forms1");
+      var y = document.getElementById("forms2");
+      var z = document.getElementById("forms3");
+      y.style.display = "none";
+      z.style.display = "none";
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+    function forms2Show() {
+      var x = document.getElementById("forms1");
+      var y = document.getElementById("forms2");
+      var z = document.getElementById("forms3");
+      x.style.display = "none";
+      z.style.display = "none";
+      if (y.style.display === "block") {
+        y.style.display = "none";
+      } else {
+        y.style.display = "block";
+      }
+    }
+
+    function forms3Show() {
+      var x = document.getElementById("forms1");
+      var y = document.getElementById("forms2");
+      var z = document.getElementById("forms3");
+      x.style.display = "none";
+      y.style.display = "none";
+      if (z.style.display === "block") {
+        z.style.display = "none";
+      } else {
+        z.style.display = "block";
+      }
+    }
+</script>
 </html>

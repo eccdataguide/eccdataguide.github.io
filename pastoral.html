@@ -4,8 +4,9 @@
 <link rel="stylesheet" href="buttons.css">
 
 <style>
-#abes,#grades,#attendance {
+#abes,#attendance,#qual {
   display: none;
+  width: 800px;
 }
 </style>
 <body>
@@ -20,7 +21,7 @@
   <a href="index.html">Home</a>
   <a href="pastoral.html"><p>Pastoral <br>Data</a>
   <a href="academic.html"><p>Academic <br>Data</a>
-  <a href="datasources.html"><p>Data <br>Sources</a>
+<!--    <a href="datasources.html"><p>Data <br>Sources</a> -->
   <a href="collecting.html"><p>Collecting <br>Data</a>
 </div>
 
@@ -29,18 +30,38 @@
   <p>
     <div id="abesbtn" onclick="abesShow()">
     </div>
+    <div id="qualbtn" onclick="qualShow()">
+    </div>
 
 <div id="datashow">
-<img id="abes" src="ABEs.png">
+<img id="abes" src="data/ABEs.png">
+<img id="qual" src="data/qualitativeanalysis.png">
+</div>
 
 <script>
     function abesShow() {
       var x = document.getElementById("abes");
+      var y = document.getElementById("qual");
+
+      y.style.display = "none";
 
       if (x.style.display === "block") {
         x.style.display = "none";
       } else {
         x.style.display = "block";
+      }
+    }
+
+    function qualShow() {
+      var x = document.getElementById("abes");
+      var y = document.getElementById("qual");
+
+      x.style.display = "none";
+
+      if (y.style.display === "block") {
+        y.style.display = "none";
+      } else {
+        y.style.display = "block";
       }
     }
 </script>
