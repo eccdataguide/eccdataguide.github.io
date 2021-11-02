@@ -25,6 +25,8 @@
   height: 85px;
   padding-left: 40px;
   z-index: 1;
+  font-family: 'roboto',sans-serif;
+  letter-spacing: 2px;
 }
 
 .sidenav {
